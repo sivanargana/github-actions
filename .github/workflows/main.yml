@@ -20,9 +20,10 @@ jobs:
       - name: Build Angular app to prod
         working-directory: app
         run: npm install && npm run build:prod
-      - name: Deploy 
-        uses: peaceiris/actions-gh-pages@v3
+ 
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist/app/browser
-          enable_jekyll: true
+          branch: gh-pages  # The branch where the generated site will be pushed
+          folder: dist/app/browser     # The folder where your static files are generated (adjust if different)
+          token: ${{ secrets.GITHUB_TOKEN }}  #
