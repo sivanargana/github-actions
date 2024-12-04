@@ -25,5 +25,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # The branch where the generated site will be pushed
-          folder: dist/app/browser     # The folder where your static files are generated (adjust if different)
+          folder: /home/runner/work/github-actions/github-actions/app/dist/app/browser    # The folder where your static files are generated (adjust if different)
           token: ${{ secrets.GITHUB_TOKEN }}  #
