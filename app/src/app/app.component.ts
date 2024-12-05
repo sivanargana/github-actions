@@ -14,7 +14,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
-    document.cookie = "token101=123456; expires=;domain=github.io; path=/";
+    document.cookie = "token101=123456; expires=;domain=sivanargana.github.io/; path=/";
+    document.cookie = "token101=123456; expires=;domain=sravan3210.github.io/; path=/";
 
    
   }
